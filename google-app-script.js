@@ -137,8 +137,6 @@ class GoogleElementTree
   
   /**
    * parseTextChild
-   * 
-   * Courtesy: https://github.com/oazabir/GoogleDoc2Html/blob/master/code.js
    */
   parseTextChild(item)
   {
