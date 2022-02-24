@@ -4,9 +4,24 @@
  * 
  * https://github.com/gijsbos
  * 
+ * Usage:
+ *  - Set output to 'print' or 'email' in GoogleDocumentToHTML(output = "<output type>")
+ * 
  * Adaptation of https://github.com/oazabir/GoogleDoc2Html:
  *  - Improved html formatting (indentation etc)
  *  - Fixed list element nesting
+ */
+
+/**
+ * GoogleDocumentToHTML
+ */
+function GoogleDocumentToHTML(output = "print") // print/email
+{
+  main(output);
+}
+
+/**
+ * Utils
  */
 open = (tag) => { return `<${tag}>`; };
 close = (tag) => { return `</${tag}>`; };
@@ -16,21 +31,23 @@ html = (tag, content, indents, newline = true) => { return `${newline ? '\n' : '
 /**
  * GoogleDocumentToHTML
  */
-function GoogleDocumentToHTML()
+function main(output)
 {
-  // Create tree
-  var tree = new GoogleElementTree();
+  // Create GoogleElementTree
+  var googleDocument = new GoogleElementTree();
 
   // Get body
   var body = DocumentApp.getActiveDocument().getBody();
 
   // Walk through children
   for (var i = 0; i < body.getNumChildren(); i++)
-    tree.add(body.getChild(i));
+    googleDocument.add(body.getChild(i));
 
-  // Print or email to self
-  tree.printHTML(); // Will be truncated when too large, uncomment 'tree.emailHTML();' instead
-  // tree.emailHTML();
+  // Set output: print or email content to self (required when html is too. large)
+  if(output == "email")
+    googleDocument.emailHTML();
+  else
+    googleDocument.printHTML();
 }
 
 /**
