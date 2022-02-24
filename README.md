@@ -1,8 +1,8 @@
-# GoogleDocumentToHTML
-  
+
 ## Description
 Outputs a Google Document to normal HTML.  
-This script is an adaptation of oazabir's GoogleDoc2Html fixing formatting and nesting issues.
+
+Improves oazabir's GoogleDoc2Html fixing formatting and nesting issues.
   
 ## Usage
 1. Open Google Document
@@ -12,4 +12,4 @@ This script is an adaptation of oazabir's GoogleDoc2Html fixing formatting and n
 5. Set output 'print' or 'email' in GoogleDocumentToHTML(output = ...)
   
 ## Credits
-Code reuse from: https://github.com/oazabir/GoogleDoc2Html  
+- https://github.com/oazabir/GoogleDoc2Html  
