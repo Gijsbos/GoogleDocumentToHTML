@@ -2,7 +2,7 @@
  * GoogleDocumentToHTML
  * Author: G.H. Bos
  * 
- * https://github.com/gijsbos
+ * https://github.com/Gijsbos/GoogleDocumentToHTML
  * 
  * Usage:
  *  - Set output to 'print' or 'email' in GoogleDocumentToHTML(output = "<output type>")
