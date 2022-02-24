@@ -241,7 +241,7 @@ class GoogleElementTree
 
       // Line breaks are empty <p> elements, replace with </br>
       if(tag === 'p' && text.trim().length === 0)
-        return "\n</br>";
+        return "\n<br/>";
 
       // Parent is array
       if(Array.isArray(parent))
