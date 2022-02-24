@@ -1,15 +1,11 @@
 /**
  * GoogleDocumentToHTML
  * Author: G.H. Bos
- * 
- * https://github.com/Gijsbos/GoogleDocumentToHTML
+ * Repository: https://github.com/Gijsbos/GoogleDocumentToHTML
  * 
  * Usage:
- *  - Set output to 'print' or 'email' in GoogleDocumentToHTML(output = "<output type>")
- * 
- * Adaptation of https://github.com/oazabir/GoogleDoc2Html:
- *  - Improved html formatting (indentation etc)
- *  - Fixed list element nesting
+ *  1. Set output to 'print' or 'email' in GoogleDocumentToHTML(output = "<output type>")
+ *  2. Execute!
  */
 
 /**
