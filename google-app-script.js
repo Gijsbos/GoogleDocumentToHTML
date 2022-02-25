@@ -25,7 +25,7 @@ indent = (indents) => { return `\t`.repeat(indents); };
 html = (tag, content, indents, newline = true) => { return `${newline ? '\n' : ''}${indent(indents)}${open(tag)}\n${content}\n${indent(indents)}${close(tag)}`};
 
 /**
- * GoogleDocumentToHTML
+ * main
  */
 function main(output)
 {
